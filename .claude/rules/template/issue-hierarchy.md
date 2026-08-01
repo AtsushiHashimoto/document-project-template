@@ -9,9 +9,11 @@ research-project-template に従う。ここでは**文書執筆に固有の tas
 
 ```
 task
- ├─ 1. constraints   形式制約と評価基準の採取・更新（/doc-init /doc-constraints /doc-criteria）
- ├─ 2. graph         概念グラフの作成・更新と全体直列化（/doc-graph）
- ├─ 3. draft         執筆。段落ごとに /doc-paragraph を伴う
+ ├─ 1. constraints   形式制約と評価基準の採取・更新
+ │                  （/doc-init /doc-references /doc-constraints /doc-criteria）
+ ├─ 2. graph         概念グラフと質問票の作成・更新（/doc-graph /doc-questions）
+ ├─ 3. draft         /doc-outline でトピックセンテンスを確定させてから、
+ │                  質問ごとに /doc-paragraph → /doc-answer を繰り返す
  ├─ 4. coverage      評価基準への対応の点検と欠落の解消（/doc-coverage）
  └─ 5. polish        推敲・体裁・分量調整
 ```
@@ -35,3 +37,6 @@ Issue 単位に切ると、変更の理由と範囲が記録に残り、
 
 とくに共著の場合、「なぜこの順序なのか」が記録されていないと、
 善意の第三者が最適化された順序を壊す。
+
+- **提出後に `/doc-harvest` を回す。** 磨いた質問票を `docs/question-sets/` に残さないと、
+  次回また一次資料から作り直しになる。結果（評点・コメント）が判明したら追記する
