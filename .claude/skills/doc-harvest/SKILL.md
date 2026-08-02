@@ -11,7 +11,7 @@ argument-hint: [文書種別の名前]
 
 ## Step 1: 質問票を清書する
 
-`.doc/questions.md` から回答本文を落とし、**質問と注記だけ**を
+`worksheet/questions.md` から回答本文を落とし、**質問と注記だけ**を
 `docs/question-sets/<文書種別>.md` に書き出す。
 
 残すもの: 質問文、由来（形式項目／評定要素／二次資料）、分量目安、依存関係、記入順序。

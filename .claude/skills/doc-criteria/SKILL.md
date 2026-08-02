@@ -1,6 +1,6 @@
 ---
 name: doc-criteria
-description: 評価基準（評定要素、評価方式、評価者像）を一次資料から採取・更新して .doc/criteria.md に固定する。審査基準・査読基準・採点表を発行元から直接取得する。
+description: 評価基準（評定要素、評価方式、評価者像）を一次資料から採取・更新して worksheet/criteria.md に固定する。審査基準・査読基準・採点表を発行元から直接取得する。
 argument-hint: [審査基準・査読基準のURLまたはパス]
 ---
 
@@ -27,7 +27,7 @@ argument-hint: [審査基準・査読基準のURLまたはパス]
 
 ## 読者像を書く
 
-`.doc/criteria.md` の末尾に評価者の想定を書く。
+`worksheet/criteria.md` の末尾に評価者の想定を書く。
 
 - 専門は近いか、遠いか
 - 何本の文書を読むか（＝1本にかけられる時間）
@@ -39,4 +39,4 @@ argument-hint: [審査基準・査読基準のURLまたはパス]
 
 ## 出力
 
-`.doc/criteria.md` を更新し、続けて `/doc-coverage` で対応表を再点検する。
+`worksheet/criteria.md` を更新し、続けて `/doc-coverage` で対応表を再点検する。

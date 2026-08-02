@@ -1,6 +1,6 @@
 ---
 name: doc-questions
-description: この文書専用の質問票を、一次資料（様式の記載項目・評定要素）と二次資料（指南資料）から生成して .doc/questions.md に固定する。各質問が1段落に対応し、質問に答えることで文書を完成させる。doc-init の直後に実行する。
+description: この文書専用の質問票を、一次資料（様式の記載項目・評定要素）と二次資料（指南資料）から生成して worksheet/questions.md に固定する。各質問が1段落に対応し、質問に答えることで文書を完成させる。doc-init の直後に実行する。
 argument-hint: [節を絞る場合はその名前]
 ---
 
@@ -20,7 +20,7 @@ argument-hint: [節を絞る場合はその名前]
 
 ## 前提
 
-`.doc/constraints.md` と `.doc/criteria.md` が揃っていること。
+`worksheet/constraints.md` と `worksheet/criteria.md` が揃っていること。
 二次資料があれば `docs/references/` も読む。無ければ先に `/doc-init`。
 
 ## Step 0: ★ 既製の質問票があるか確認する
@@ -110,7 +110,7 @@ argument-hint: [節を絞る場合はその名前]
 
 ## Step 5: 書き出し
 
-`.doc/questions.md` に保存する。冒頭に節ごとの完了率を置く。
+`worksheet/questions.md` に保存する。冒頭に節ごとの完了率を置く。
 
 ```markdown
 # 質問票

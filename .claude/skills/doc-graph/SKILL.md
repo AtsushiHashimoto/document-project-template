@@ -11,12 +11,12 @@ argument-hint: [対象ファイル]
 
 ## 前提
 
-`.doc/constraints.md` と `.doc/criteria.md` が存在すること。
+`worksheet/constraints.md` と `worksheet/criteria.md` が存在すること。
 無ければ先に `/doc-init` を実行する。**この2つを読まずにグラフを作ってはいけない。**
 
 ## Step 0: 制約の読み込み
 
-`.doc/constraints.md` から**記載項目の順序**を、`.doc/criteria.md` から**評定要素の一覧**を
+`worksheet/constraints.md` から**記載項目の順序**を、`worksheet/criteria.md` から**評定要素の一覧**を
 読む。以降の直列化はこの2つの制約下で行う。
 
 ## Step 1: 概念の抽出と分類
@@ -46,7 +46,7 @@ argument-hint: [対象ファイル]
 
 ## Step 4: 評価基準への対応表
 
-`.doc/criteria.md` の評定要素を縦に並べ、各要素に対応する記述箇所を書く。
+`worksheet/criteria.md` の評定要素を縦に並べ、各要素に対応する記述箇所を書く。
 **空欄が欠落。** 欠落は認知負荷側の指摘より優先度が高い。
 
 ## Step 5: 制約下での再直列化
@@ -60,11 +60,11 @@ argument-hint: [対象ファイル]
 - 各ステップで **discharge される概念**（読者が捨ててよくなるもの）を明記する
 
 形式制約と衝突が残る場合は、前の項目で前提を先出しし後の項目を詳細化に留める。
-**その構造を採ったことを `.doc/graph.md` に明記する。**
+**その構造を採ったことを `worksheet/graph.md` に明記する。**
 
 ## Step 6: 書き出し
 
-**会話に書いて終わりにしない。** 結果は必ず `.doc/graph.md` に永続化する。
+**会話に書いて終わりにしない。** 結果は必ず `worksheet/graph.md` に永続化する。
 冒頭に対象ファイル名、**対象のコミットハッシュまたは日付**、点検日、使用した制約の版を記録する。
 どの版に対する点検かが分からないノートは無価値になる。
 

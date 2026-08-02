@@ -1,6 +1,6 @@
 ---
 name: doc-init
-description: 文書プロジェクトの初期化。形式制約と評価基準を一次資料から採取して .doc/constraints.md と .doc/criteria.md に固定する。文章を一文字も書く前に必ず実行する。
+description: 文書プロジェクトの初期化。形式制約と評価基準を一次資料から採取して worksheet/constraints.md と worksheet/criteria.md に固定する。文章を一文字も書く前に必ず実行する。
 argument-hint: [様式・投稿規定のURLまたはパス]
 ---
 
@@ -19,20 +19,20 @@ argument-hint: [様式・投稿規定のURLまたはパス]
 ## Step 2: 一次資料を集める
 
 様式ファイル、記入要領、投稿規定、審査基準を**発行元から直接**取得し、
-`.doc/sources/` に保存する。解説サイト・先輩のファイル・過去の自分の申請書は
+`worksheet/sources/` に保存する。解説サイト・先輩のファイル・過去の自分の申請書は
 すべて二次情報であり、採取元にしてはいけない。
 
 PDFからテキストが取れない場合は、ページを画像に変換して読む。
 テキスト抽出が文字化けするからといって、記憶や二次情報で代用しないこと。
 
-## Step 3: 形式制約を `.doc/constraints.md` に固定する
+## Step 3: 形式制約を `worksheet/constraints.md` に固定する
 
 - 記載項目とその順序を**原文のまま引用**する
 - 分量上限と、その数え方に影響する要素（削除必須の指示書き等）
 - 体裁（フォントサイズ、色の可否、見出しの扱い）
 - 採取元URL／パスと採取日
 
-## Step 4: 評価基準を `.doc/criteria.md` に固定する
+## Step 4: 評価基準を `worksheet/criteria.md` に固定する
 
 - 評定要素を**一行ずつ**表に落とす。要約も統合もしない
 - 絶対評価か相対評価か、独立項目か総合評点の一部か
@@ -42,7 +42,7 @@ PDFからテキストが取れない場合は、ページを画像に変換し�
 
 ## Step 5: 読者像を書く
 
-`.doc/criteria.md` の末尾に、評価者の想定を書く。
+`worksheet/criteria.md` の末尾に、評価者の想定を書く。
 
 - 専門は近いか、遠いか
 - 何本の文書を読むか（＝1本にかけられる時間）
@@ -74,16 +74,16 @@ PDFからテキストが取れない場合は、ページを画像に変換し�
 形式は満たすが作法を外す。
 
 挙がった資料は `/doc-references <URL>` で読み込む。
-**一次資料とは別の場所（`docs/references/`）に蓄積し、`.doc/criteria.md` は汚さない。**
+**一次資料とは別の場所（`docs/references/`）に蓄積し、`worksheet/criteria.md` は汚さない。**
 
 心当たりが無いと言われた場合も、`/doc-references` の存在を伝えておく。
 執筆が進んでから思い出すことが多い。
 
 ## 完了条件
 
-- `.doc/constraints.md` に記載項目の原文が入っている
-- `.doc/criteria.md` に評定要素が一行ずつ入っている
-- `.doc/sources/` に一次資料が保存されている
+- `worksheet/constraints.md` に記載項目の原文が入っている
+- `worksheet/criteria.md` に評定要素が一行ずつ入っている
+- `worksheet/sources/` に一次資料が保存されている
 - 採取元と採取日が記録されている
 - **二次資料の有無をユーザーに確認済みで、挙がったものは `/doc-references` で処理済み**
 

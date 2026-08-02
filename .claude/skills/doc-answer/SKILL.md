@@ -10,7 +10,7 @@ argument-hint: <質問番号>
 
 ## 前提
 
-- `.doc/questions.md` に質問票があること
+- `worksheet/questions.md` に質問票があること
 - 対象の質問のトピックセンテンスが `●` 以上であること（`/doc-outline` 済み）
 
 トピックセンテンスが未確定なら**先に `/doc-outline` に戻る。**
@@ -46,7 +46,7 @@ argument-hint: <質問番号>
 
 ## Step 5: 状態を更新する
 
-`.doc/questions.md` の状態を `○` にし、節ごとの完了率を更新する。
+`worksheet/questions.md` の状態を `○` にし、節ごとの完了率を更新する。
 
 ## 回答のべからず
 

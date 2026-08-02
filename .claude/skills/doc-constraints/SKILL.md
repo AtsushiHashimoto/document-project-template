@@ -1,6 +1,6 @@
 ---
 name: doc-constraints
-description: 形式制約（記載項目の順序、分量上限、体裁）を一次資料から採取・更新して .doc/constraints.md に固定する。版や年度が変わったとき、および執筆の各周回の冒頭で実行する。
+description: 形式制約（記載項目の順序、分量上限、体裁）を一次資料から採取・更新して worksheet/constraints.md に固定する。版や年度が変わったとき、および執筆の各周回の冒頭で実行する。
 argument-hint: [様式・記入要領のURLまたはパス]
 ---
 
@@ -43,5 +43,5 @@ pdftoppm -png -r 150 -f N -l N in.pdf out   # 化けたら画像で読む
 
 ## 出力
 
-`.doc/constraints.md` を更新する。更新したら `.doc/graph.md` の直列化案が
+`worksheet/constraints.md` を更新する。更新したら `worksheet/graph.md` の直列化案が
 まだ制約を満たしているかを必ず再点検する。

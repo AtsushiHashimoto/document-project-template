@@ -39,10 +39,10 @@ mkdir -p "$TARGET/.claude/rules/template"
 for f in "$TMP/tpl/.claude/rules/template/"*.md; do
   copy "$f" "$TARGET/.claude/rules/template/$(basename "$f")"
 done
-for f in "$TMP/tpl/.doc/"*.md; do
-  copy "$f" "$TARGET/.doc/$(basename "$f")"
+for f in "$TMP/tpl/worksheet/"*.md; do
+  copy "$f" "$TARGET/worksheet/$(basename "$f")"
 done
-mkdir -p "$TARGET/.doc/sources" "$TARGET/docs/references" "$TARGET/docs/question-sets"
+mkdir -p "$TARGET/worksheet/sources" "$TARGET/docs/references" "$TARGET/docs/question-sets"
 
 echo ""
 echo "Done. Run /doc-init before writing anything."
