@@ -12,6 +12,7 @@ Issue・コミット・レビューの機構は research-project-template のス
 | `/doc-init` | 形式制約と評価基準を一次資料から採取。**一文字も書く前に実行**。最後に二次資料の有無を質問する |
 | `/doc-references` | 権威ある二次資料で評価軸の解釈を補強し `docs/references/` に蓄積 |
 | `/doc-questions` | この文書専用の質問票を生成。既製の質問票があればそれを土台にする |
+| `/doc-survey` | 文献サーベイを実施し `docs/surveys/` に残す。**存在を確認できていない文献は載せない** |
 
 ### 手順1・2: 制約の確認
 
@@ -45,7 +46,7 @@ Issue・コミット・レビューの機構は research-project-template のス
 ### 実行順序
 
 ```
-/doc-init → /doc-references → /doc-questions
+/doc-init → /doc-references → /doc-questions → (/doc-survey)
      → /doc-graph → /doc-outline
      → ( /doc-paragraph → /doc-answer N ) × 質問数
      → /doc-coverage → /doc-review → 提出 → /doc-harvest
