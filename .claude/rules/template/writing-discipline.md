@@ -68,3 +68,24 @@
 **借りるのは装置であって、中身ではない。**
 質問票という装置は一般に使えるが、質問項目は文書ごとに
 一次資料（様式・評価基準）と二次資料から作り直す。
+
+### 同期の仕組みとレビュー機能は競合しうる
+
+外部ツールと同期しながら書く場合（Overleaf の git 連携、Google Docs の API 更新など）、
+**同期による上書きが、共著者のコメントやトラックチェンジを消すことがある。**
+
+例: Overleaf 公式は git 連携について
+「pushes from Git to Overleaf can result in the loss or displacement of track changes and
+comments. Consequently, we do not recommend mixing active use of Git and the use of
+track changes and/or comments」と明記している。
+さらに **git 側でのファイル改名は、Overleaf 側では delete + create になり、
+そのファイルのコメントが消える。**
+
+**共著者と共有する前に、使っている同期方式とレビュー機能の相性を必ず確認する。**
+競合する場合の運用は次のいずれか。
+
+1. **レビュー期間中は同期を凍結する。** コメントが出揃ったら取り込み、反映後に再開する
+2. レビューを別の媒体で行う（PRレビュー、別ファイル、別プロジェクト）
+
+いずれの場合も、**共有開始後にファイルを改名・移動しない。**
+改名が必要なら共有前に済ませること。
