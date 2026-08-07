@@ -40,7 +40,8 @@ Issue・コミット・レビューの機構は research-project-template のス
 
 | スキル | 用途 |
 |-------|------|
-| `/doc-review` | 形式・評価・直列化の総点検 |
+| `/doc-readability` | 読みやすさ監査（`readability.md` 基準5〜10）。diff提案のみで適用は指示待ち。**Fable で実行**（`.claude/agents/doc-readability-reviewer.md`） |
+| `/doc-review` | 形式・評価・直列化・読みやすさの総点検 |
 | `/doc-harvest` | 質問票を再利用資産として `docs/question-sets/` に残す |
 
 ### 実行順序
@@ -49,7 +50,7 @@ Issue・コミット・レビューの機構は research-project-template のス
 /doc-init → /doc-references → /doc-questions → (/doc-survey)
      → /doc-graph → /doc-outline
      → ( /doc-paragraph → /doc-answer N ) × 質問数
-     → /doc-coverage → /doc-review → 提出 → /doc-harvest
+     → /doc-coverage → /doc-readability → /doc-review → 提出 → /doc-harvest
 ```
 
 骨格が変わる指摘が出たら `/doc-outline` か `/doc-graph` へ戻る。
