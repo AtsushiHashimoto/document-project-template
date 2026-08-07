@@ -40,6 +40,7 @@ Issue・コミット・レビューの機構は research-project-template のス
 
 | スキル | 用途 |
 |-------|------|
+| `/doc-slim` | 削ぎ落とし（`slimming.md`）。一次資料の要求と反復に照らして削れる文を対話的に特定。根拠は「要求外」か「反復」のみ、1承認1コミット |
 | `/doc-numbers` | 数値監査（`numbers.md` 検査a〜d: 出典突合・文書内一致・算術検算・見かけの矛盾）。数値・金額の記入直後は必ず回す。モデル指定なし |
 | `/doc-readability` | 読みやすさ監査（`readability.md` 基準5〜10）。diff提案のみで適用は指示待ち。**Fable で実行**（`.claude/agents/doc-readability-reviewer.md`） |
 | `/doc-review` | 形式・評価・直列化・数値・読みやすさの総点検 |
@@ -51,7 +52,7 @@ Issue・コミット・レビューの機構は research-project-template のス
 /doc-init → /doc-references → /doc-questions → (/doc-survey)
      → /doc-graph → /doc-outline
      → ( /doc-paragraph → /doc-answer N ) × 質問数
-     → /doc-coverage → /doc-numbers → /doc-readability → /doc-review → 提出 → /doc-harvest
+     → /doc-coverage → /doc-slim → /doc-numbers → /doc-readability → /doc-review → 提出 → /doc-harvest
 ```
 
 骨格が変わる指摘が出たら `/doc-outline` か `/doc-graph` へ戻る。
